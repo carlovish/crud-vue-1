@@ -15,7 +15,7 @@ router.post("/tasks", async (req, res) => {
 
   await task.save();
 
-  res.send("Nueva tarea");
+  res.json({message:"Tarea creada"})
 });
 
 router.get("/tasks/:id", async (req, res) => {
